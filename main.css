@@ -1,0 +1,104 @@
+*, *::after, *::before {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    display: grid;
+    gap: 2rem;
+    grid-template-columns: repeat(2, 4rem);
+    grid-template-rows: 7rem 2rem 7rem;
+    justify-content: center;
+    padding-top: 2rem;
+    cursor: crosshair;
+}
+
+/*.deck {
+    color: whitesmoke;
+    height: 100%;
+    width: 100%;
+}*/
+
+.computer-deck {
+    background-color: gray;
+    height: 100%;
+    width: 100%;
+    border: 2px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1rem;
+    border-radius: .5rem;
+    color: white;
+}
+
+.player-deck {
+    background-color: red;
+    height: 100%;
+    width: 100%;
+    border: 2px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1rem;
+    border-radius: .5rem;
+    color: white;
+}
+
+.text {
+    grid-column: span 2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: black;
+    /* border: 1px black solid;     */
+}
+
+/*.card {
+    position: relative;
+    height: 100%;
+    width: 100%;
+    border: 1px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 4rem;
+    border-radius: .5rem;
+    color: black;
+    font-size: 2rem;
+}*/
+
+.computer-card-slot {
+    text-align: center;
+    color: black;
+}
+
+.player-card-slot {
+    text-align: center;
+    color: black;
+}
+
+/*.card.red {
+    color: red;
+}
+
+.card.black {
+    color: black;
+}*/
+
+/*.card::before,
+.card::after {
+    position: absolute;
+    content: attr(data-value);
+    font-size: 1rem;
+}
+
+.card::before {
+    top: .5rem;
+    left: .5rem
+  }
+  
+.card::after {
+    bottom: .5rem;
+    right: .5rem;
+  }
